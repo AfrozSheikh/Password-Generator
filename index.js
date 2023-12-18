@@ -18,6 +18,8 @@
   let password  = "" ; 
   let checkCount = 0 ; 
   handleSlider() ; 
+  setIndicator('grey') ;
+
 
 
   //set PasswordLength
@@ -28,7 +30,7 @@ function handleSlider() {
 }
 
 function setIndicator (color){ 
-indicator.style.backgroundColor = color ;  
+indicator.style.backgroundColor = color;  
 }
 
 function getRandomInteger(min,max) {
