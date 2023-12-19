@@ -8,7 +8,9 @@
 body {
     height: 100vh;
      width: 100vw;
-     background: linear-gradient(90deg, rgb(127, 0, 219) 0%, rgb(127, 0, 196) 30%);
+     /* background: linear-gradient(90deg, rgb(127, 0, 219) 0%, rgb(184, 85, 236) 30%);
+      */
+      background-color: rgb(80, 76, 76);
       display: flex;
      justify-content: center ;
      align-items: center ;
@@ -32,9 +34,10 @@ h1{
      position: relative;
      background-color: rgb(157, 201, 201) ;
      border-radius: 1rem ;
-     border-bottom: 0.35 solid rgb(171, 247, 247);
+     border-bottom: 0.35 solid rgb(95, 240, 240);
      margin: 1rem 0 ;
       padding-top : 0.3rem;
+      box-shadow: 6px 6px 3px  black ;
  }
  .container{
      width:  90% ;
@@ -74,10 +77,11 @@ h1{
 
  .input-container { 
     width: 100%;
-    background-color: rgb(122, , 122);
+    background-color: rgb(37, 40, 48);
     border-radius: 1rem;
     padding: 2rem ;
     border: 3px solid black;
+    box-shadow: 3px 3px 3px  black;
     
 
     
@@ -100,6 +104,10 @@ h1{
    margin-bottom: 1.5rem;
  }
 
+ .copy-btn {
+   cursor: pointer;
+ }
+
  .strength-container p{
     font-weight: bold;
     color: yellow ;
@@ -115,12 +123,14 @@ h1{
  .generateButton{
     width:  100%;
     padding: 1rem 0 ;
-    background:linear-gradient(90deg, rgb(207, 73, 224) 0%, rgb(195, 76, 224) 30%);
+    background-color: rgba(245, 236, 227, 0.555);
      text-align: center ;
      border-radius: 0.75rem ;
      border-bottom: 1.2rem ;
      font-weight:  800;
      font-size: 1.25rem ;
+     box-shadow: 3px 3px 5px rgb(56, 52, 52) ; 
+     cursor: pointer;
 }
   
  .check{ 
@@ -135,18 +145,48 @@ h1{
     appearance: none;
     width: 20px;
     height: 20px;
-    border: 1px solid rgb(156, 190, 60);
+    border: 1px solid rgb(252, 253, 249);
     position: relative;
     border-radius: 25%;
+    cursor: pointer;
     
 
  }
  .check input:checked{ 
-      background-color: rgb(101, 233, 211);
+      background-color: rgb(227, 243, 240);
+    
 
  }
  .check label{ 
-    color: white;
+    color: rgb(233, 229, 229);
     font-size: 1.2rem;
     
  }
+ 
+ .slider { 
+   appearance: none;
+   width: 100%;
+   box-shadow: 1px 1px 2px yellow;
+   cursor: pointer;
+   background-color: rgb(217, 243, 243);
+   border-radius: 1rem ;
+   height: 0.75rem ;
+   margin-top: 2rem ;
+   margin-bottom:  1.5rem;
+   background-repeat: no-repeat;
+   border: 1px solid rgb(43, 38, 38) ;
+
+   transition:  all 100ms ease-in ;
+
+
+ }
+  
+ /* .slider::-webkit-slider-thumb{
+   appearance: none;
+   height: 2rem ;
+   width: 2rem ;
+   cursor: pointer;
+   border-radius: 50% ;
+   margin-top: -3px;
+  
+ } */
